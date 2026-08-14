@@ -128,7 +128,7 @@ const menuItems = [
 
     category: "rice",
 
-    image: "images/kabulipulao.jpg",
+    image: "images/pulao.jpg",
   },
 ];
 
