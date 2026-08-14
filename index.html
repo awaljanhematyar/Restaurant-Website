@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- =========================
+       BASIC HTML SETTINGS
+  ========================== -->
+
+    <!-- Support English characters -->
+    <meta charset="UTF-8" />
+
+    <!-- Make website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website title -->
+    <title>JAN BROTHERS RESTAURANT</title>
+
+    <!-- =========================
+       SEO META TAGS
+  ========================== -->
+
+    <!-- Website description for search engines -->
+    <meta
+      name="description"
+      content="Jan Brothers Restaurant offers delicious traditional Afghan food with fresh ingredients and authentic taste." />
+
+    <!-- Website keywords -->
+    <meta
+      name="keywords"
+      content="Jan Brothers Restaurant, Afghan food, Afghan restaurant, Kabul restaurant, Afghan kebab, Kabuli pulao" />
+
+    <!-- Website author -->
+    <meta name="author" content="Jan Brothers Restaurant" />
+
+    <!-- =========================
+       CSS FILE
+  ========================== -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       LOADING SPINNER
+  ========================== -->
+
+    <!-- This appears while the page is loading -->
+    <div id="loader">
+      <!-- Animated loading circle -->
+      <div class="spinner"></div>
+    </div>
+
+    <!-- =========================
+       HEADER AND NAVBAR
+  ========================== -->
+
+    <header>
+      <nav class="navbar">
+        <!-- =========================
+           RESTAURANT LOGO
+      ========================== -->
+
+        <div class="logo">
+          <h1>JAN BRO</h1>
+        </div>
+
+        <!-- =========================
+           NAVIGATION LINKS
+      ========================== -->
+
+        <ul class="nav-links">
+          <!-- Home link -->
+          <li>
+            <a href="#hero" class="active"> Home </a>
+          </li>
+
+          <!-- Menu link -->
+          <li>
+            <a href="#menu"> Menu </a>
+          </li>
+
+          <!-- About link -->
+          <li>
+            <a href="#about"> About </a>
+          </li>
+
+          <!-- Gallery link -->
+          <li>
+            <a href="#gallery"> Gallery </a>
+          </li>
+
+          <!-- Contact link -->
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- =========================
+           NAVIGATION BUTTONS
+      ========================== -->
+
+        <div class="nav-buttons">
+          <!-- Mobile menu button -->
+          <button class="menu-btn" type="button" aria-label="Open menu">
+            ☰
+          </button>
+
+          <!-- Dark and light mode button -->
+          <button id="themeBtn" type="button" aria-label="Change theme">
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================
+       HERO SECTION
+  ========================== -->
+
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <!-- Main heading -->
+        <h2>Welcome to JAN BROTHERS RESTAURANT</h2>
+
+        <!-- Restaurant introduction -->
+        <p>Delicious Afghan food made with love and traditional taste.</p>
+
+        <!-- Button that moves to menu -->
+        <a href="#menu" class="btn"> View Menu </a>
+      </div>
+    </section>
+
+    <!-- =========================
+       MENU SECTION
+  ========================== -->
+
+    <section class="menu scroll-animation" id="menu">
+      <!-- Menu heading -->
+      <h2>Our Menu</h2>
+
+      <!-- =========================
+         MENU CONTROLS
+    ========================== -->
+
+      <div class="menu-controls">
+        <!-- Search food -->
+        <input
+          type="search"
+          id="searchFood"
+          placeholder="Search food..."
+          aria-label="Search food" />
+
+        <!-- Filter food by category -->
+        <select id="categoryFilter" aria-label="Filter food category">
+          <option value="all">All Foods</option>
+
+          <option value="kebab">Kebab</option>
+
+          <option value="pizza">Pizza</option>
+
+          <option value="bolani">Bolani</option>
+
+          <option value="rice">Rice</option>
+        </select>
+
+        <!-- Sort food by price -->
+        <select id="priceSort" aria-label="Sort food by price">
+          <option value="default">Sort By Price</option>
+
+          <option value="low">Low to High</option>
+
+          <option value="high">High to Low</option>
+        </select>
+      </div>
+
+      <!-- JavaScript will put food cards here -->
+      <div class="menu-container"></div>
+
+      <!-- Message shown when no food is found -->
+      <p id="noFood" class="no-food">No food found.</p>
+    </section>
+
+    <!-- =========================
+       ABOUT SECTION
+  ========================== -->
+
+    <section class="about scroll-animation" id="about">
+      <div class="about-container">
+        <!-- About image -->
+        <div class="about-image">
+          <img src="images/about.jpg" alt="Jan Brothers Restaurant" />
+        </div>
+
+        <!-- About text -->
+        <div class="about-content">
+          <h2>About Jan Brothers Restaurant</h2>
+
+          <p>
+            Jan Brothers Restaurant brings traditional Afghan flavors with fresh
+            ingredients and a warm atmosphere. Our goal is to provide delicious
+            food and a memorable experience for every customer.
+          </p>
+
+          <!-- Contact button -->
+          <a href="#contact" class="btn"> Contact Us </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       GALLERY SECTION
+  ========================== -->
+
+    <section class="gallery scroll-animation" id="gallery">
+      <h2>Our Gallery</h2>
+
+      <div class="gallery-container">
+        <!-- Gallery image 1 -->
+        <img
+          src="images/gallery1.jpg"
+          alt="Afghan food"
+          class="gallery-image" />
+
+        <!-- Gallery image 2 -->
+        <img
+          src="images/gallery2.jpg"
+          alt="Restaurant food"
+          class="gallery-image" />
+
+        <!-- Gallery image 3 -->
+        <img
+          src="images/gallery3.jpg"
+          alt="Delicious Afghan food"
+          class="gallery-image" />
+
+        <!-- Gallery image 4 -->
+        <img
+          src="images/gallery4.jpg"
+          alt="Restaurant gallery"
+          class="gallery-image" />
+      </div>
+    </section>
+
+    <!-- =========================
+       GALLERY LIGHTBOX
+  ========================== -->
+
+    <!-- This opens when a gallery image is clicked -->
+    <div id="lightbox">
+      <!-- Close lightbox button -->
+      <button id="closeLightbox" type="button" aria-label="Close image">
+        ×
+      </button>
+
+      <!-- Large selected image -->
+      <img id="lightboxImage" src="" alt="Gallery preview" />
+    </div>
+
+    <!-- =========================
+       CONTACT SECTION
+  ========================== -->
+
+    <section class="contact scroll-animation" id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-container">
+        <!-- =========================
+           CONTACT INFORMATION
+      ========================== -->
+
+        <div class="contact-info">
+          <h3>Jan Brothers Restaurant</h3>
+
+          <p>📍 Kabul, Afghanistan</p>
+
+          <p>📞 +93 782 767 734</p>
+
+          <p>✉ awaljanhematyar.com</p>
+        </div>
+
+        <!-- =========================
+           CONTACT FORM
+      ========================== -->
+
+        <form class="contact-form" id="contact-form">
+          <!-- Name input -->
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            autocomplete="name" />
+
+          <!-- Email input -->
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            autocomplete="email" />
+
+          <!-- Message input -->
+          <textarea id="message" placeholder="Your Message"></textarea>
+
+          <!-- Submit button -->
+          <button type="submit">Submit</button>
+
+          <!-- Error or success message -->
+          <p id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer class="footer">
+      <h2>Jan Brothers Restaurant</h2>
+      <p>Delicious food with traditional taste.</p>
+
+      <!-- Social media links -->
+      <div class="social-links">
+        <a href="#"> Facebook </a>
+
+        <a href="#"> Instagram </a>
+
+        <a href="#"> WhatsApp </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        © 2026 Jan Brothers Restaurant. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- =========================
+       BACK TO TOP BUTTON
+  ========================== -->
+
+    <button id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <!-- =========================
+       JAVASCRIPT FILE
+  ========================== -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
