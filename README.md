@@ -81,3 +81,31 @@ Example:
   image: "images/kebab.jpg"
 }
 ```
+
+## Run locally
+
+```sh
+git clone https://github.com/awaljanhematyar/Restaurant-Website.git
+cd Restaurant-Website
+```
+
+Open `index.html` in a browser or serve the folder with VS Code Live Server. This static project has no npm installation or build step.
+
+## Source map
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Page structure and restaurant sections |
+| `style.css` | Visual design and responsive layout |
+| `script.js` | Menu data and interactive behavior |
+| `images/` | Food, gallery and restaurant assets |
+
+## Customization and scope
+
+Update the food records in `script.js`, the page content in `index.html` and styles in `style.css`. Verify business details, image rights and contact destinations before publishing a customized version. A frontend form or WhatsApp link alone does not confirm an order or reservation.
+
+This README review does not establish new runtime or accessibility test results.
+
+## Author
+
+[Awal Jan Hematyar](https://github.com/awaljanhematyar) · [Developer portfolio](https://hematyar-professional-portfolio.vercel.app/)
