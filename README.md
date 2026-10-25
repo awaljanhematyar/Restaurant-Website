@@ -1,12 +1,12 @@
-# JAN BROTHERS RESTAURANT
+# JAN RESTAURANT
 
-A modern and responsive restaurant website built for Jan Brothers Restaurant.
+A modern and responsive restaurant website built for Jan Restaurant.
 
 The website presents traditional Afghan food, restaurant information, food gallery, contact form, dark mode, responsive navigation, scroll animations, and WhatsApp food ordering.
 
 ## Project Overview
 
-JAN BROTHERS RESTAURANT is a frontend web project designed to provide customers with a simple and attractive way to explore the restaurant and its menu.
+JAN RESTAURANT is a frontend web project designed to provide customers with a simple and attractive way to explore the restaurant and its menu.
 
 The project focuses on:
 
@@ -109,3 +109,4 @@ This README review does not establish new runtime or accessibility test results.
 ## Author
 
 [Awal Jan Hematyar](https://github.com/awaljanhematyar) · [Developer portfolio](https://hematyar-professional-portfolio.vercel.app/)
+
